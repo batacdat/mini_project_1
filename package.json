@@ -1,16 +1,10 @@
 {
   "name": "mini_project_1",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
-    "dev": "tailwindcss -i ./src/input.css -o ./src/output.css --watch",
     "build": "tailwindcss -i ./src/input.css -o ./src/output.css --minify"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "devDependencies": {
+  "dependencies": {
     "tailwindcss": "^3.4.18"
   }
 }
