@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.html", "./src/**/*.{html,js}"], // Thêm cả file HTML ở root
+  content: ["./src/**/*.html"], // Chỉ cần tìm trong thư mục src
   theme: {
     extend: {
       colors: {
