@@ -59,7 +59,7 @@ a {
 }
 
 .list-items {
-    margin-top: -250px;
+    @apply mt-[-200px] ;
 }
 /* About Section */
 
