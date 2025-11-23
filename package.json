@@ -2,9 +2,6 @@
   "name": "mini_project_1",
   "version": "1.0.0",
   "scripts": {
-    "build": "tailwindcss -i ./src/input.css -o ./src/output.css --minify"
-  },
-  "dependencies": {
-    "tailwindcss": "^3.4.18"
+    "build": "echo 'No build needed - using pre-built CSS'"
   }
 }
