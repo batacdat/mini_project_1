@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  @apply font-sans text-[15px] bg-background_p text-text_p scroll-smooth;
+}
+
+/* components khoi */
+a {
+    @apply no-underline text-black hover:text-secondary transition-colors duration-300;
+}
+
+.container {
+    @apply w-full mx-auto px-8;
+    max-width: 1140px;
+}
+
+.wrap {
+    @apply w-full max-w-[600px] text-center mx-auto my-0;
+}
+
+/* components text */
+.title {
+    @apply leading-[1.5] text-3xl lg:text-4xl m-0 text-white font-medium text-center;
+}
+
+.home-content p {
+    @apply text-white mt-8 mb-8 text-center text-lg;
+}
+
+/* components button */
+.btn {
+    @apply py-3 px-8  text-white rounded-full cursor-pointer uppercase font-semibold text-sm inline-block transition-colors duration-300;
+}
+
+/* Feature items */
+.feature-item {
+    @apply   bg-white shadow-lg rounded-2xl text-center p-10 mb-8;
+}
+
+.feature-icon {
+    @apply w-20 h-20 flex justify-center items-center rounded-full bg-primary hover:bg-secondary mx-auto mb-6 transition-colors duration-300;
+}
+
+.feature-item h5 {
+    @apply text-lg font-medium mb-4 text-text_p;
+}
+
+.feature-item p {
+    @apply text-text_s leading-relaxed;
+}
+
+.list-items {
+    margin-top: -250px;
+}
+/* About Section */
+
+.about-content h2 {
+    @apply text-2xl lg:text-3xl font-medium text-text_p mb-6;
+}
+
+.about-content p {
+    @apply text-text_s text-lg leading-relaxed;
+}
+
+.about-image {
+    @apply flex justify-center items-center;
+}
+
+.about-image img {
+    @apply max-w-full h-auto;
+}
+
+.about-divider {
+    @apply w-full h-px bg-gray-300 ;
+}
+
+/* Work Process Section */
+.work-process {
+    @apply w-full h-auto bg-[url(./assets/img/work-process-bg.png)] bg-no-repeat bg-cover bg-center my-[100px] pb-[100px];
+}
+.box-item {
+    @apply h-auto text-center m-auto bg-white rounded-[25px] shadow-lg hover:translate-y-[-10px] transition-all duration-300; 
+}
+
+/* testimonials */
+.img-icon {
+    @apply flex justify-center items-center mx-auto align-middle border-none;
+}
+
+/* pricing  */
+.heading {
+   @apply pt-[100px] text-center;
+}
+.list-box {
+    @apply grid grid-flow-row-dense grid-cols-1 grid-rows-3 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-3 lg:grid-rows-1 gap-10 ;
+}
+.card-item {
+    @apply flex flex-col justify-between items-center bg-white  gap-3;
+}
+.card-price {
+    @apply py-[15px] px-0 bg-primary rounded-[20px] flex flex-col justify-center items-center text-center;
+}
+
+ul {
+    @apply list-none text-center ;
+}
+/* stats section */
+/* stats section */
+.stats {
+    @apply relative py-[50px] bg-white;
+}
+
+.stats::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./assets/img/fun-facts-bg.png') no-repeat center center;
+    background-size: cover;
+    opacity: 0.9;
+    z-index: 1;
+}
+
+.stats .container {
+    position: relative;
+    z-index: 2;
+}
+
+.stats-content {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4 relative z-10 text-white;
+}
+
+.stats-item {
+    @apply flex flex-col justify-center items-center text-center py-4 relative;
+}
+.stats-item:hover {
+    & span {
+        @apply translate-y-[-10px] transition-all duration-300;
+    }
+    & strong {
+        @apply translate-y-[-10px] transition-all duration-300;
+    }
+}
+
+
+.stats-item strong {
+    @apply text-3xl lg:text-4xl font-bold mb-2 block;
+}
+
+.stats-item span {
+    @apply text-xl   ;
+}
+
+/* Divider cho desktop */
+@media (min-width: 1024px) {
+    .stats-item:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: -30px;
+        width: 60px;
+        height: 32px;
+        transform: translateY(-50%);
+        background: url('./assets/img/circle-dec.png') no-repeat center center;
+        background-size: contain;
+    }
+}
+/* blog section */
+/* footer section */
+.icon-1::before {
+content: '\f09a';
+font-family: "Font Awesome 6 Brands";
+font-weight: 900;
+font-size: 15px;
+color:#8D5FE5;
+}
+.icon-2::before {
+content: '\f099';
+font-family: "Font Awesome 6 Brands";
+font-weight: 900;
+font-size: 15px;
+color:#8D5FE5; 
+}
+
+.icon-3::before {
+content: '\f0e1';
+font-family: "Font Awesome 6 Brands";
+font-weight: 900;
+font-size: 15px;
+color:#8D5FE5; 
+}
+.icon-4::before {
+content: '\f09e';
+font-family: "Font Awesome 6 Brands";
+font-weight: 900;
+font-size: 15px;
+color:#8D5FE5; 
+}
+
+.icon-5::before {
+content: '\f17d';
+font-family: "Font Awesome 6 Brands";
+font-weight: 900;
+font-size: 15px;
+color:#8D5FE5; 
+}
+
+
+/* Đảm bảo section home có đủ chiều cao và hiển thị đúng */
+#home {
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Fix cho header fixed */
+#header {
+    z-index: 1000;
+}
+#footer {
+        background-image: linear-gradient(127deg, #a759d1 0%, #8261ee 91%);
+    padding-top: 30px;
+}
+/* Feature intro margin */
+.feature-intro {
+    margin-bottom: 100px;
+}
+
+.bg-gradient-to-r {
+    background: linear-gradient(to right, #8261EE 5%, #FF589E 100%);
+}
